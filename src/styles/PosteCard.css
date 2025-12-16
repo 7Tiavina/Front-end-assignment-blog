@@ -1,0 +1,28 @@
+.poste-card {
+  width: 300px;
+  border: 1px solid #ddd;
+  padding: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.poste-card:hover {
+  transform: scale(1.03);
+}
+
+.poste-image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.poste-card h3 {
+  margin-top: 12px;
+}
+
+.poste-card p {
+  font-size: 14px;
+  color: #555;
+}

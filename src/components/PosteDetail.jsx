@@ -26,7 +26,7 @@ function PosteDetail() {
   return (
     <div className="poste-detail">
       <button className="back-btn" onClick={() => navigate(-1)}>
-        ← Retour
+        Retour
       </button>
 
       {!editMode ? (

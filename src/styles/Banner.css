@@ -4,3 +4,43 @@
     padding: 32px;
     border-bottom: solid 3px black;
 }
+
+.btn-add {
+  margin-top: 16px;
+  padding: 8px 16px;
+  background: black;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.post-form {
+  margin-top: 24px;
+  max-width: 400px;
+  text-align: left;
+}
+
+.form-group {
+  margin-bottom: 12px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 4px;
+  font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #000;
+}
+
+.btn-submit {
+  padding: 8px 16px;
+  background: black;
+  color: white;
+  border: none;
+  cursor: pointer;
+}

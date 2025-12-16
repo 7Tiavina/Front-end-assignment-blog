@@ -1,27 +1,13 @@
-import { useEffect, useState } from 'react'
-import Banner from './Banner'
-import PosteCard from './PosteCard'
-import '../App.css'
+import { Routes, Route } from 'react-router-dom'
+import Home from './Home'
+import PosteDetail from './PosteDetail'
 
 function App() {
-  const [postes, setPostes] = useState([])
-
-  useEffect(() => {
-    fetch('http://localhost:8000/api/allPostes')
-      .then(res => res.json())
-      .then(data => setPostes(data))
-  }, [])
-
   return (
-    <div>
-      <Banner />
-
-      <div className="postes-container">
-        {postes.map(poste => (
-          <PosteCard key={poste.id} poste={poste} />
-        ))}
-      </div>
-    </div>
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/postes/:id" element={<PosteDetail />} />
+    </Routes>
   )
 }
 

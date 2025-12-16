@@ -1,0 +1,9 @@
+.poste-detail {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 24px;
+}
+
+.poste-detail h1 {
+  margin-bottom: 20px;
+}

@@ -2,12 +2,17 @@ import '../styles/PosteCard.css'
 import blogImage from '../assets/blog.jpg'
 
 function PosteCard({ poste }) {
+  const shortContent =
+    poste.contenu.length > 30
+      ? poste.contenu.substring(0, 30) + '...'
+      : poste.contenu
+
   return (
     <div className="poste-card">
       <img src={blogImage} alt="blog" className="poste-image" />
 
       <h3>{poste.titre}</h3>
-      <p>{poste.contenu}</p>
+      <p>{shortContent}</p>
     </div>
   )
 }
